@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Resetting Password</title>
+ 
+<link href="styl.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+<form action="forgotpasswordservletpat" method="post">
+<h1> Forgot your password?</h1>
+<p>Don't worry, Resetting your password is easy, just mention the email address you have registered.</p><br>
+<div class="form-box">
+<input type="text" class="text-field email" placeholder="Enter your email address " name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+<input type="password" class="text-field newpswd" placeholder="New password" name="newpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+<input type="password" class="text-field confirmpswd" placeholder="Confirm password" name="connewpass" required><br><br>
+<button class="submit-btn" type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>

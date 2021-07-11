@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="stylere.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body
+    {
+        height:97.6vh;
+        font-family: Century Gothic;
+    }
+    nav ul{
+	float: right;
+	
+	
+}
+
+
+nav ul li{
+	float:center;
+	display: inline-block;
+	position:relative;
+	width:150px;
+	
+}
+
+nav ul li a{
+	display:block;
+	text-decoration: none;
+	color: #fff;
+	padding: 22px 14px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	
+}
+nav ul li ul{
+	display:none;
+	position:absolute;
+	padding:10px;
+	border:4px;
+	
+}
+nav ul li:hover ul{
+	display:block;
+	
+	
+}
+nav ul li ul li {
+	width:180px;
+	border:4px;
+	
+}
+nav ul li ul li a{
+	padding: 10px 10px;
+	
+}
+
+nav ul li ul li a:hover{
+	background-color:#fff;
+	
+}
+
+nav ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+nav ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+
+}
+
+
+.main{
+	max-width: 120px;
+	margin: auto;
+	
+	
+}
+
+.title{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	text-shadow:3px 3px #4682B4;
+	
+}
+
+.title h1{
+	text-shadow:3px 3px #4682B4;
+	font-size: 60px;
+	font-style:italic;
+	font-weight:normal;
+	
+}
+
+.button{
+	position: absolute;
+	top: 62%;
+	left: 50%;
+	transform: translate(-50%-50%);
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+</style>
+<title>Rating and review</title>
+</head>
+<body >
+    <div class="main">
+		
+		<nav>	
+			<ul>
+				<li ><a href="mainpage.html">Home</a></li>
+				
+				<li><a href="review.html">Ratings/Reviews</a></li>
+				
+				<li><a href="#" target="_self">Login</a>
+					<ul>
+						<li><a href="doctorlogin.html" target="_self">Doctor</a>
+						<li><a href="patientlogin.html" target="_self">Patient</a>
+					</ul>
+				</li>
+				<li><a href="#" target="_self">Signup</a>
+				<ul>
+						<li><a href="doctorsignup.html" target="_self">Doctor</a>
+						<li><a href="patientsignup.html" target="_self">Patient</a>
+					</ul></li>
+				<li><a href="_contactus.html">Contact</a></li>
+			</ul>
+			</nav>
+			
+		</div>
+    
+
+<br><br><br><br><br><br>
+<div class="box">
+<center>Rating:
+    <br><br>
+<form class="rating" action="ratingservlet" align="center">
+  <label>
+    <input type="radio" name="stars" value="1" />
+    <span class="fa fa-star"></span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="2" />
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="3" />
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>   
+  </label>
+  <label>
+    <input type="radio" name="stars" value="4" />
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="5" />
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+  </label>
+</form>
+<br><br>
+<form action="reviewservlet">
+<label for="pagereview">Reviews:</label>
+<textarea id="pagereview" name="Review" rows="5" cols="50">
+</textarea>
+<br>
+<input type="submit" value="Submit"></center>
+</form>
+</div>
+<br>
+<center>Help us make our services better by rating Your Experience</center>
+<script>
+$(':radio').change(function() {
+  console.log('New star rating: ' + this.value);
+});
+</script>
+</body></html>

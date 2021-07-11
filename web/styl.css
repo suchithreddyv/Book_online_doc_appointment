@@ -1,0 +1,71 @@
+body
+{
+margin: 0;
+padding: 0;
+}
+.header
+{
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/back.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: center;
+align-items: center;
+font family: sans-serif;
+}
+h1
+{
+color: #fff;
+margin-bottom: 70px;
+font-size: 45px;
+letter-spacing: 2px;
+text-align: center;
+}
+p
+{
+color: #fff;
+margin-bottom: 70px;
+font-size: 25px;
+letter-spacing: 1px;
+text-align: center;
+}
+.text-field
+{
+height: 50px;
+padding: 30px;
+border: none;
+border-radius: 25px;
+outline: none;
+
+}
+.email
+{
+width: 400px;
+
+}
+.newpswd{
+width: 400px;
+}
+.confirmpswd{
+width: 400px;
+}
+.submit-btn
+{
+height: 50px;
+width:150px;
+background: #ffeb3b;
+border: none;
+color: #000;
+border-radius: 25px;
+}
+.submit-btn:hover{
+background: #ffc107;
+cursor: pointer;
+}  
+.form-box
+{
+background : rgba(0,0,0,0.5);
+padding : 30px;
+text-align: center;
+}

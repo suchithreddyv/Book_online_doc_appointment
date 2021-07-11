@@ -1,0 +1,104 @@
+<style>
+body {
+	font-family: Century Gothic;
+	 background-image:url("Images/back.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+        height:92.5vh;
+	
+}
+	h1{font-style:italic;
+font-weight:normal;}
+
+
+form {border: 2px solid #f1f1f1; 
+
+}
+
+input[type=text], input[type=password], input[type=number], input[type=date]{
+  width: 20%;
+  padding: 5px 5px;
+  margin: 4px 0;
+  text-align: left;
+  border: 1px solid #ccc;
+  
+  }
+
+.buttons{
+	 background-color: #000000;
+  color: white;
+  padding: 10px 18px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 10%;
+}
+.buttons a{
+	color:white;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 18px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 20%;
+  
+}
+.bg-img{
+	background-image:url("Images/back.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;	
+	
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+center{ 
+			position:relative;
+			
+			color:black;
+			font-style: italic;
+			font-weight:bold;
+			font-size: 200%;
+			}
+.cancelbtn {
+  width: 20%;
+  padding: 10px 18px;
+  background-color: #000000;
+  float:center;
+}
+
+img.avatar {
+	
+  width: 20%;
+  border-radius: 30%;
+}
+
+
+.container {
+	padding:8px;
+height:525px;
+}
+
+span.psw {
+  float: center;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+	  
+     width: 100%;
+  }
+}
+</style>

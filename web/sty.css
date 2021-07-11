@@ -1,0 +1,171 @@
+body
+{
+margin: 0;
+padding: 0;
+}
+.header
+{
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/image.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content:flex-start;
+align-self: center ;
+font-family: sans-serif;
+}
+.myclass{
+    position: absolute;
+    right: 360px;
+    
+}
+h1
+{
+color: #fff;
+margin-bottom: 70px;
+font-size: 45px;
+letter-spacing: 2px;
+text-align: center;
+}
+.search-field
+{
+height: 50px;
+padding: 30px;
+border: none;
+border-radius: 25px;
+outline: none;
+}
+.specializtion
+{
+width: 400px;
+}
+.location{
+width: 200px;
+}
+.search-btn
+{
+height: 50px;
+width:150px;
+background: #ffeb3b;
+border: none;
+color: #000;
+border-radius: 25px;
+}
+.search-btn:hover{
+background: #ffc107;
+cursor: pointer;
+}  
+.form-box
+{
+background : rgba(0,0,0,0.5);
+padding : 30px;
+
+}
+
+.main{
+	
+	margin: 0;
+	float : top;
+	
+}
+nav ul{
+	float:left;
+	
+}
+
+
+nav ul li{
+	float:right;
+	display: inline-block;
+	position:relative;
+	width:150px;
+	
+}
+
+nav ul li a{
+	display:block;
+	text-decoration: none;
+	color: #fff;
+	padding: 22px 14px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	
+}
+nav ul li ul{
+	display:none;
+	position:absolute;
+	padding:10px;
+	border:4px;
+	
+}
+nav ul li:hover ul{
+	display:block;
+	
+	
+}
+nav ul li ul li {
+	width:180px;
+	border:4px;
+	
+}
+nav ul li ul li a{
+	padding: 10px 10px;
+	
+}
+
+nav ul li ul li a:hover{
+	background-color:#fff;
+	
+}
+
+nav ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+nav ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+
+}
+
+
+
+
+.title{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	text-shadow:3px 3px #4682B4;
+	
+}
+
+.title h1{
+	text-shadow:3px 3px #4682B4;
+	font-size: 60px;
+	font-style:italic;
+	font-weight:normal;
+	
+}
+
+.button{
+	position: absolute;
+	top: 62%;
+	left: 50%;
+	transform: translate(-50%-50%);
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
